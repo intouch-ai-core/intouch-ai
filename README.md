@@ -134,7 +134,7 @@ Everything else is at **[blueisle.com](https://blueisle.com)** —
 - **[Discord](https://discord.gg/Egmpjch9)** — fastest Q&A
 - **[Slack](https://join.slack.com/t/intouchcommunity/shared_invite/zt-3xld2ef1s-9gX9PHzJ46XafO973EIIpA)**
 - **[Issues](https://github.com/intouch-ai-core/intouch-ai/issues)** — bugs and feature requests
-- **[InTouch Hub](https://github.com/intouch-ai-core/intouch-hub)** — browse and publish tools
+- **[InTouch Hub](https://hub.blueisle.com)** — browse and publish tools
 
 The platform is commercial; the **ecosystem on top of it is open**. Build tools against the
 MIT-licensed `intouch-tool-api`, or author workflows and tools as IML, and install them from
