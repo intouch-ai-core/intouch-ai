@@ -1,0 +1,337 @@
+================================================================================
+
+  INTOUCH PERSONAL EDITION
+  END USER LICENSE AGREEMENT (EULA)
+
+  Version 8.0.0
+  Copyright (c) 2014-2026 Blue Isle Software, Inc., a Delaware corporation All rights reserved.
+
+================================================================================
+
+IMPORTANT: READ THIS LICENSE AGREEMENT CAREFULLY BEFORE INSTALLING, COPYING, OR
+USING THIS SOFTWARE. BY INSTALLING, COPYING, OR USING THIS SOFTWARE, YOU AGREE
+TO BE BOUND BY THE TERMS OF THIS AGREEMENT. IF YOU DO NOT AGREE TO THESE TERMS,
+DO NOT INSTALL, COPY, OR USE THIS SOFTWARE.
+
+This End User License Agreement ("Agreement") is a legal agreement between you
+(either an individual or a single entity, referred to herein as "You" or
+"Licensee") and Blue Isle Software, Inc., a Delaware corporation ("Blue Isle", "Licensor", "we", or
+"us") for the InTouch Personal Edition software, which includes the computer
+software, associated media, documentation, and any updates or supplements
+provided by Blue Isle (collectively, the "Software").
+
+--------------------------------------------------------------------------------
+1. GRANT OF LICENSE
+--------------------------------------------------------------------------------
+
+1.1 LICENSE GRANT. Subject to the terms and conditions of this Agreement, Blue
+    Isle grants You a perpetual, non-exclusive, non-transferable, royalty-free
+    license to install, use, and run the Software for any lawful personal or
+    business purpose without limitation on the number of users, instances, or
+    machines.
+
+1.2 FREE OF CHARGE. The InTouch Personal Edition is provided free of charge.
+    No license fee is required.
+
+--------------------------------------------------------------------------------
+2. RESTRICTIONS
+--------------------------------------------------------------------------------
+
+You may NOT:
+
+2.1 Distribute, sublicense, rent, lease, lend, sell, or otherwise transfer the
+    Software or any rights therein to any third party without prior written
+    consent from Blue Isle;
+
+2.2 Modify, adapt, translate, reverse engineer, decompile, disassemble, or
+    create derivative works based on the Software, except to the extent that
+    such activity is expressly permitted by applicable law notwithstanding this
+    limitation;
+
+2.3 Remove, alter, or obscure any proprietary notices, labels, or marks on the
+    Software or documentation;
+
+2.4 Use the Software to provide commercial hosting, managed services,
+    software-as-a-service (SaaS), or any service bureau offering to third
+    parties without a separate commercial license from Blue Isle;
+
+2.5 Use the Software in any manner that violates applicable local, state,
+    national, or international law or regulation;
+
+2.6 Represent or imply that the Software is Your own product, or use Blue Isle's
+    name, trademarks, or branding in any way that suggests endorsement or
+    affiliation without prior written consent.
+
+--------------------------------------------------------------------------------
+3. INTELLECTUAL PROPERTY
+--------------------------------------------------------------------------------
+
+3.1 OWNERSHIP. The Software is protected by copyright laws and international
+    treaty provisions. Blue Isle and its licensors retain all right, title, and
+    interest in and to the Software, including all intellectual property rights
+    therein. This Agreement does not grant You any rights to trademarks, service
+    marks, or trade names of Blue Isle.
+
+3.2 NO TRANSFER OF OWNERSHIP. This Agreement grants a license to use the
+    Software. It does not constitute a sale. No title to or ownership of the
+    Software or any intellectual property rights therein is transferred to You.
+
+--------------------------------------------------------------------------------
+4. THIRD-PARTY COMPONENTS
+--------------------------------------------------------------------------------
+
+4.1 The Software includes third-party open source libraries licensed under their
+    respective open source licenses. A complete list of third-party components
+    and their licenses is provided in the THIRD-PARTY-LICENSES.txt file included
+    with the Software.
+
+4.2 Nothing in this Agreement limits or modifies the rights granted to You under
+    the licenses of the third-party components. In the event of a conflict
+    between this Agreement and the license terms of any third-party component,
+    the third-party component's license terms shall prevail with respect to that
+    component.
+
+4.3 BLUE ISLE MAKES NO REPRESENTATIONS OR WARRANTIES REGARDING THIRD-PARTY
+    COMPONENTS. THIRD-PARTY COMPONENTS ARE PROVIDED BY THEIR RESPECTIVE AUTHORS
+    AND ARE SUBJECT TO THEIR OWN LICENSE TERMS, WARRANTIES, AND LIMITATIONS.
+
+--------------------------------------------------------------------------------
+5. DISCLAIMER OF WARRANTIES
+--------------------------------------------------------------------------------
+
+5.1 THE SOFTWARE IS PROVIDED "AS IS", "AS AVAILABLE", AND "WITH ALL FAULTS"
+    WITHOUT WARRANTY OF ANY KIND, EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE.
+
+5.2 BLUE ISLE EXPRESSLY DISCLAIMS ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO
+    THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+    TITLE, NON-INFRINGEMENT, ACCURACY, RELIABILITY, COMPLETENESS, QUIET
+    ENJOYMENT, AND INTEGRATION.
+
+5.3 BLUE ISLE DOES NOT WARRANT THAT:
+    (a) THE SOFTWARE WILL MEET YOUR REQUIREMENTS OR EXPECTATIONS;
+    (b) THE SOFTWARE WILL BE UNINTERRUPTED, TIMELY, SECURE, OR ERROR-FREE;
+    (c) THE RESULTS OBTAINED FROM THE USE OF THE SOFTWARE WILL BE ACCURATE,
+        RELIABLE, OR COMPLETE;
+    (d) ANY ERRORS OR DEFECTS IN THE SOFTWARE WILL BE CORRECTED;
+    (e) THE SOFTWARE WILL BE COMPATIBLE WITH ANY PARTICULAR HARDWARE, SOFTWARE,
+        OR NETWORK ENVIRONMENT; OR
+    (f) THE SOFTWARE IS FREE OF VIRUSES, MALWARE, OR OTHER HARMFUL COMPONENTS.
+
+5.4 NO ORAL OR WRITTEN INFORMATION OR ADVICE GIVEN BY BLUE ISLE, ITS EMPLOYEES,
+    AGENTS, REPRESENTATIVES, OR CONTRACTORS SHALL CREATE ANY WARRANTY NOT
+    EXPRESSLY STATED IN THIS AGREEMENT.
+
+5.5 YOU ACKNOWLEDGE THAT YOU HAVE RELIED ON NO WARRANTIES OTHER THAN THE EXPRESS
+    WARRANTIES IN THIS AGREEMENT (OF WHICH THERE ARE NONE) AND THAT NO
+    WARRANTIES ARE MADE BY BLUE ISLE OR GRANTED BY LAW THAT HAVE NOT BEEN
+    EXPRESSLY DISCLAIMED HEREIN TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE
+    LAW.
+
+--------------------------------------------------------------------------------
+6. ASSUMPTION OF RISK
+--------------------------------------------------------------------------------
+
+6.1 YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT YOUR USE OF THE SOFTWARE IS AT YOUR
+    SOLE AND ENTIRE RISK. YOU ASSUME FULL RESPONSIBILITY FOR ALL RISK ASSOCIATED
+    WITH THE INSTALLATION, CONFIGURATION, USE, OUTPUT, RESULTS, AND PERFORMANCE
+    OF THE SOFTWARE.
+
+6.2 YOU ARE SOLELY RESPONSIBLE FOR DETERMINING WHETHER THE SOFTWARE IS SUITABLE
+    FOR YOUR INTENDED USE AND FOR ENSURING THAT YOUR USE COMPLIES WITH ALL
+    APPLICABLE LAWS, REGULATIONS, INDUSTRY STANDARDS, AND INTERNAL POLICIES.
+
+6.3 YOU ARE SOLELY RESPONSIBLE FOR MAINTAINING ADEQUATE BACKUPS OF YOUR DATA,
+    SYSTEMS, AND CONFIGURATIONS. BLUE ISLE SHALL HAVE NO LIABILITY FOR ANY LOSS
+    OF DATA, CORRUPTION, OR SYSTEM DAMAGE ARISING FROM USE OF THE SOFTWARE.
+
+6.4 YOU ARE SOLELY RESPONSIBLE FOR SECURING THE MACHINE ON WHICH THE SOFTWARE IS
+    INSTALLED, INCLUDING THE PROTECTION OF CREDENTIALS, DATABASE CONTENTS, AND
+    ANY SENSITIVE INFORMATION PROCESSED OR STORED BY THE SOFTWARE.
+
+--------------------------------------------------------------------------------
+7. LIMITATION OF LIABILITY
+--------------------------------------------------------------------------------
+
+7.1 TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL BLUE
+    ISLE, ITS PARENT COMPANIES, SUBSIDIARIES, AFFILIATES, OFFICERS, DIRECTORS,
+    EMPLOYEES, AGENTS, CONTRACTORS, LICENSORS, SUPPLIERS, OR SUCCESSORS BE
+    LIABLE TO YOU OR ANY THIRD PARTY FOR ANY OF THE FOLLOWING, WHETHER BASED ON
+    WARRANTY, CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY, STATUTE,
+    OR ANY OTHER LEGAL THEORY, EVEN IF BLUE ISLE HAS BEEN ADVISED OF THE
+    POSSIBILITY OF SUCH DAMAGES:
+
+    (a) ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR
+        PUNITIVE DAMAGES;
+    (b) LOSS OF PROFITS, REVENUE, BUSINESS, GOODWILL, OR ANTICIPATED SAVINGS;
+    (c) LOSS OF, DAMAGE TO, OR CORRUPTION OF DATA;
+    (d) BUSINESS INTERRUPTION OR LOSS OF BUSINESS OPPORTUNITY;
+    (e) COST OF PROCUREMENT OF SUBSTITUTE GOODS, SERVICES, OR TECHNOLOGY;
+    (f) PERSONAL INJURY OR PROPERTY DAMAGE;
+    (g) ANY CLAIMS BY THIRD PARTIES; OR
+    (h) ANY OTHER LOSSES OR DAMAGES OF ANY KIND.
+
+7.2 IN NO EVENT SHALL BLUE ISLE HAVE ANY MONETARY LIABILITY TO YOU FOR ANY
+    CLAIMS ARISING OUT OF OR RELATED TO THIS AGREEMENT OR THE SOFTWARE. THE
+    SOFTWARE IS PROVIDED FREE OF CHARGE AND YOU ACKNOWLEDGE THAT NO
+    CONSIDERATION HAS BEEN PAID TO BLUE ISLE, AND THEREFORE BLUE ISLE SHALL
+    HAVE ZERO (0) LIABILITY FOR ANY DAMAGES WHATSOEVER.
+
+7.3 THE LIMITATIONS SET FORTH IN THIS SECTION SHALL APPLY REGARDLESS OF WHETHER
+    THE ALLEGED BREACH OR DEFAULT IS A BREACH OF A FUNDAMENTAL CONDITION OR
+    TERM, OR A FUNDAMENTAL BREACH, AND NOTWITHSTANDING ANY FAILURE OF ESSENTIAL
+    PURPOSE OF ANY LIMITED REMEDY.
+
+7.4 SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF CERTAIN
+    DAMAGES. IF SUCH LAWS APPLY TO YOU, SOME OR ALL OF THE ABOVE EXCLUSIONS OR
+    LIMITATIONS MAY NOT APPLY, AND YOU MAY HAVE ADDITIONAL RIGHTS. IN SUCH
+    CASES, BLUE ISLE'S LIABILITY SHALL BE LIMITED TO THE FULLEST EXTENT
+    PERMITTED BY APPLICABLE LAW.
+
+--------------------------------------------------------------------------------
+8. INDEMNIFICATION
+--------------------------------------------------------------------------------
+
+8.1 You agree to indemnify, defend, and hold harmless Blue Isle and its parent
+    companies, subsidiaries, affiliates, officers, directors, employees, agents,
+    contractors, licensors, suppliers, and successors (collectively, the
+    "Indemnified Parties") from and against any and all claims, demands, actions,
+    suits, proceedings, losses, damages, liabilities, costs, and expenses
+    (including reasonable attorneys' fees and court costs) arising out of or
+    relating to:
+
+    (a) Your installation, configuration, or use of the Software;
+    (b) Your violation of any term of this Agreement;
+    (c) Your violation of any applicable law, regulation, or third-party right;
+    (d) Any data processed, stored, transmitted, or generated using the Software;
+    (e) Any integration of the Software with Your systems, applications, or
+        third-party services;
+    (f) Any claim that Your use of the Software caused harm, loss, or damage to
+        any third party; or
+    (g) Any negligent or wrongful act or omission by You in connection with the
+        Software.
+
+8.2 Blue Isle shall have the right, at its option, to participate in or assume
+    control of the defense of any such claim, and You agree to cooperate fully
+    with Blue Isle in such defense.
+
+--------------------------------------------------------------------------------
+9. DATA AND PRIVACY
+--------------------------------------------------------------------------------
+
+9.1 LOCAL OPERATION. The Software operates locally on Your machine. The Software
+    does not transmit Your data, job configurations, credentials, or operational
+    information to Blue Isle or any third party unless You explicitly configure
+    it to connect to external systems.
+
+9.2 YOUR DATA. All data processed, stored, or generated by the Software remains
+    Your property. Blue Isle claims no ownership of or rights to Your data.
+
+9.3 NO DATA COLLECTION. Blue Isle does not collect telemetry, usage analytics,
+    or any other information from Your use of the Software.
+
+--------------------------------------------------------------------------------
+10. TERM AND TERMINATION
+--------------------------------------------------------------------------------
+
+10.1 TERM. This Agreement is effective from the date You first install, copy, or
+     use the Software and continues until terminated.
+
+10.2 TERMINATION BY YOU. You may terminate this Agreement at any time by
+     uninstalling the Software and destroying all copies in Your possession.
+
+10.3 TERMINATION BY BLUE ISLE. Blue Isle may terminate this Agreement immediately
+     upon written notice if You breach any term of this Agreement.
+
+10.4 EFFECT OF TERMINATION. Upon termination, You must immediately cease all use
+     of the Software and destroy all copies in Your possession or control.
+     Sections 3, 4, 5, 6, 7, 8, 11, and 12 shall survive termination.
+
+--------------------------------------------------------------------------------
+11. GOVERNING LAW AND DISPUTE RESOLUTION
+--------------------------------------------------------------------------------
+
+11.1 This Agreement shall be governed by and construed in accordance with the
+     laws of the State of Delaware, United States of America, without regard to
+     conflict of law principles.
+
+11.2 Any dispute arising out of or in connection with this Agreement shall first
+     be attempted to be resolved through good-faith negotiation. If not resolved
+     within thirty (30) days, either party may submit the dispute to the
+     exclusive jurisdiction of the state and federal courts located in the State
+     of Delaware, United States of America.
+
+11.3 You irrevocably consent to the personal jurisdiction and venue of the courts
+     located in the State of Delaware, and waive any objection to such
+     jurisdiction or venue on the grounds of inconvenient forum or otherwise.
+
+11.4 Notwithstanding the foregoing, Blue Isle may seek injunctive or other
+     equitable relief in any court of competent jurisdiction to protect its
+     intellectual property rights.
+
+--------------------------------------------------------------------------------
+12. GENERAL PROVISIONS
+--------------------------------------------------------------------------------
+
+12.1 ENTIRE AGREEMENT. This Agreement constitutes the entire agreement between
+     You and Blue Isle with respect to the Software and supersedes all prior or
+     contemporaneous understandings, communications, negotiations, or agreements,
+     written or oral, regarding its subject matter.
+
+12.2 AMENDMENT. Blue Isle reserves the right to modify this Agreement at any
+     time. Updated terms will be included with new releases of the Software.
+     Your continued use of the Software after receiving an updated Agreement
+     constitutes acceptance of the modified terms.
+
+12.3 SEVERABILITY. If any provision of this Agreement is held to be invalid,
+     illegal, or unenforceable by a court of competent jurisdiction, the
+     remaining provisions shall remain in full force and effect. The invalid
+     provision shall be modified to the minimum extent necessary to make it
+     valid and enforceable while preserving its original intent.
+
+12.4 WAIVER. The failure of either party to enforce any right or provision of
+     this Agreement shall not constitute a waiver of such right or provision.
+     Any waiver must be in writing and signed by the waiving party.
+
+12.5 ASSIGNMENT. You may not assign or transfer this Agreement or any rights
+     granted hereunder without the prior written consent of Blue Isle. Blue Isle
+     may assign this Agreement without restriction. Any attempted assignment in
+     violation of this section shall be void.
+
+12.6 EXPORT COMPLIANCE. You agree to comply with all applicable export and
+     re-export control laws and regulations, including the Export Administration
+     Regulations and sanctions programs administered by applicable government
+     authorities.
+
+12.7 NO AGENCY. Nothing in this Agreement shall be construed to create a
+     partnership, joint venture, agency, or employment relationship between
+     You and Blue Isle.
+
+12.8 FORCE MAJEURE. Blue Isle shall not be liable for any failure or delay in
+     performance due to causes beyond its reasonable control, including but not
+     limited to acts of God, war, terrorism, natural disasters, pandemics,
+     government actions, or interruption of communications or power supply.
+
+12.9 HEADINGS. Section headings are for convenience only and shall not affect
+     the interpretation of this Agreement.
+
+--------------------------------------------------------------------------------
+13. CONTACT INFORMATION
+--------------------------------------------------------------------------------
+
+Blue Isle Software, Inc., a Delaware corporation
+Email:  support@blueisle.com
+Web:    https://www.blueisle.com
+
+For commercial or enterprise licensing inquiries: licensing@blueisle.com
+
+================================================================================
+
+BY INSTALLING, COPYING, OR USING THE SOFTWARE, YOU ACKNOWLEDGE THAT YOU HAVE
+READ THIS AGREEMENT, UNDERSTAND IT, AND AGREE TO BE BOUND BY ITS TERMS AND
+CONDITIONS. YOU FURTHER ACKNOWLEDGE THAT THIS AGREEMENT IS THE COMPLETE AND
+EXCLUSIVE STATEMENT OF THE AGREEMENT BETWEEN YOU AND BLUE ISLE, AND THAT IT
+SUPERSEDES ANY PRIOR OR CONTEMPORANEOUS PROPOSAL, UNDERSTANDING, OR OTHER
+AGREEMENT, WHETHER ORAL OR WRITTEN, AND ANY OTHER COMMUNICATIONS RELATING TO
+THE SUBJECT MATTER OF THIS AGREEMENT.
+
+================================================================================
