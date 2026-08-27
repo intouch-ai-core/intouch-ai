@@ -7,7 +7,7 @@
 **Production-proven. AI-native. Free to start.**
 
 [![License](https://img.shields.io/badge/Personal-Free%20EULA-green.svg)](LICENSE.txt)
-[![Version](https://img.shields.io/badge/version-8.0.5-blue.svg)](https://github.com/intouch-ai-core/intouch-ai)
+[![Version](https://img.shields.io/badge/version-8.0.6-blue.svg)](https://github.com/intouch-ai-core/intouch-ai)
 [![Kotlin](https://img.shields.io/badge/Kotlin-JVM%2017-orange.svg)](https://kotlinlang.org/)
 [![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Windows%20%7C%20macOS%20%7C%20ARM-lightgrey.svg)](https://github.com/intouch-ai-core/intouch-ai)
 
@@ -24,6 +24,16 @@ encrypted vault the AI cannot read.
 ## Install
 
 Needs **Java 17+**. On Windows the installer installs Python for you.
+
+**Get `install-intouch-ai.zip`** — from
+[Releases](https://github.com/intouch-ai-core/intouch-ai/releases/latest) or
+[blueisle.com](https://www.blueisle.com/downloads/install-intouch-ai.zip). It is the complete
+installation, ~240 MB: the server, the UI, the docs, the starter tools and workflows, and
+`install.py`, which copies them where you choose. Nothing is fetched over the network, so it
+installs on a machine with no internet.
+
+GitHub's green **Code ▸ Download ZIP** button is not this. That button archives the repository,
+which holds only this README and the licence.
 
 **Windows** — extract `install-intouch-ai.zip`, double-click **`install.bat`**
 
