@@ -155,6 +155,8 @@ repository:
 - **[`examples/iml-tools/`](examples/iml-tools)** — five declarative tools, the GitHub family
   InTouch uses on itself
 
+Everything under `tool-api/` and `examples/` is **MIT** — copy it, ship it, sell it.
+
 ```bash
 git clone https://github.com/intouch-ai-core/intouch-ai
 cd intouch-ai && ./gradlew :examples:connectors:cassandra:jar

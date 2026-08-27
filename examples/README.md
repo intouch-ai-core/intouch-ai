@@ -1,5 +1,10 @@
 # Examples
 
+**MIT — [LICENSE](LICENSE).** Every connector and IML tool in this directory is yours to copy,
+modify and ship, including commercially. Each source file carries its own SPDX header so the
+grant survives being copied out on its own. The InTouch server they plug into is commercial and
+its source is not published; that boundary is the point of the plugin ABI.
+
 Working code, not sketches. Every connector here is a tool that ships in InTouch and runs in
 production; every IML tool here was exercised against the live GitHub API. Nothing was written
 for this repository.

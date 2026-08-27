@@ -1,3 +1,9 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 Blue Isle Software
+//
+// Published as an InTouch Tool example: https://github.com/intouch-ai-core/intouch-ai
+// The tool is MIT. The InTouch server it plugs into is commercial and not published.
+
 package com.blueisle.intouch.tools.clickhouse
 
 import com.blueisle.intouch.tool.IToolConnector
