@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src=".github/intouch-logo.png" width="110" alt="InTouch AI">
+
 # InTouch AI
 
 ### Describe it. It runs itself.
