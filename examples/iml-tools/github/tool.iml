@@ -1,0 +1,68 @@
+{
+  "name": "github",
+  "version": "2.0.0",
+  "description": "Read and create GitHub issues, pull requests, releases and repository metadata via the GitHub REST API. Requires an API Key credential holding a personal access token; the token never appears in the workflow.",
+  "displayName": "GitHub",
+  "provider": "Blue Isle",
+  "assistantDescription": "github operation [owner repo issueNumber title body labels state] — use when the user asks to read or open GitHub issues, list pull requests or releases, or look up a repository. REQUIRES an API Key credential holding a GitHub personal access token.",
+  "credentialBased": true,
+  "input": {
+    "operation": {
+      "type": "string",
+      "required": true,
+      "description": "One of: list-issues, get-issue, create-issue, list-prs, list-releases, get-repo"
+    },
+    "owner": {
+      "type": "string",
+      "default": "",
+      "description": "Repository owner (user or org login), e.g. 'octocat'. Required for all operations."
+    },
+    "repo": {
+      "type": "string",
+      "default": "",
+      "description": "Repository name, e.g. 'hello-world'. Required for all operations."
+    },
+    "issueNumber": {
+      "type": "string",
+      "default": "",
+      "description": "Issue number — required for get-issue."
+    },
+    "title": {
+      "type": "string",
+      "default": "",
+      "description": "Issue title — required for create-issue."
+    },
+    "body": {
+      "type": "string",
+      "default": "",
+      "description": "Issue body/description — optional for create-issue."
+    },
+    "labels": {
+      "type": "string",
+      "default": "",
+      "description": "Comma-separated label names to attach when creating an issue — optional."
+    },
+    "state": {
+      "type": "string",
+      "default": "open",
+      "description": "Filter for list-issues / list-prs: open, closed, or all. Defaults to open."
+    }
+  },
+  "maxTime": 60,
+  "steps": [
+    {
+      "name": "run",
+      "type": "python",
+      "script": "github.py",
+      "timeout": 60
+    }
+  ],
+  "publish": {
+    "result": "{{run.result}}",
+    "status": "{{run.status}}"
+  },
+  "credential": {
+    "type": "apikey",
+    "properties": {}
+  }
+}

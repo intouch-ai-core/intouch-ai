@@ -1,0 +1,22 @@
+type: tool
+name: github-repo
+displayName: GitHub Repository Admin
+description: "Administer GitHub repositories — create, describe, set topics, rename, archive, list and delete. Needs an API Key credential holding a personal access token."
+version: 1.0.0
+category: Developer & DevOps
+provider: Blue Isle
+license: MIT
+tags: [developer-devops, devops, git, github, repository, administration, provisioning]
+credentialBased: true
+source: iml
+fit:
+  product: GitHub is a cloud platform for hosting Git repositories, collaborating on code, managing issues, and automating software workflows.
+  users: [software developers, DevOps engineers, platform teams, open-source maintainers, IT teams]
+  fields: [software, devops, platform-engineering]
+  pains:
+    - "Stand up a repository from a workflow instead of clicking through the website"
+    - "Give every new repository the same description, homepage and topics"
+    - "List everything in our organisation and check nothing is public by accident"
+    - "Archive a repository nobody works on any more"
+    - "Delete a repository that should never have existed"
+  generatedBy: hand-written against https://docs.github.com/en/rest/repos

@@ -1,0 +1,22 @@
+type: tool
+name: github-publish
+displayName: GitHub Publish
+description: "Publish files to a GitHub repository — create, update, read or delete one file per call through the Contents API. Needs an API Key credential holding a personal access token."
+version: 1.0.0
+category: Developer & DevOps
+provider: Blue Isle
+license: MIT
+tags: [developer-devops, devops, git, github, publish, commit, files, contents]
+credentialBased: true
+source: iml
+fit:
+  product: GitHub is a cloud platform for hosting Git repositories, collaborating on code, managing issues, and automating software workflows.
+  users: [software developers, DevOps engineers, technical writers, open-source maintainers, IT teams]
+  fields: [software, devops, documentation, product]
+  pains:
+    - "Publish the report my workflow just generated to a GitHub repository"
+    - "Keep a README on GitHub in step with what the server actually has"
+    - "Commit a file without cloning the repository onto the server"
+    - "Update a config file in a repo on a schedule"
+    - "Read a file out of a private repository into a workflow"
+  generatedBy: hand-written against https://docs.github.com/en/rest/repos/contents

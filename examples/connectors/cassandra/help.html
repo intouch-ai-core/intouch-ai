@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cassandra Tasks - InTouch Help</title>
+<style>
+body { font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 0; color: #333; background: #fff; }
+.header { background: #003366; color: #fff; padding: 15px 25px; }
+.header h1 { margin: 0; font-size: 20px; font-weight: normal; }
+.header .version { font-size: 12px; color: #8cb4d8; }
+.content { padding: 25px; max-width: 900px; }
+h2 { color: #003366; border-bottom: 2px solid #3f7f86; padding-bottom: 8px; font-size: 18px; }
+h3 { color: #3f7f86; font-size: 15px; }
+p, li { font-size: 13px; line-height: 1.6; }
+table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+th { background: #003366; color: #fff; padding: 8px 12px; text-align: left; font-size: 13px; }
+td { padding: 8px 12px; border-bottom: 1px solid #e0e0e0; font-size: 13px; }
+tr:nth-child(even) { background: #f5f6f7; }
+code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-family: Consolas, Monaco, monospace; font-size: 12px; }
+a { color: #2563eb; text-decoration: none; }
+a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="header">
+<h1>Cassandra Tasks</h1>
+<span class="version">InTouch Personal Edition v8.0.0</span>
+</div>
+<div class="content">
+<p><a href="index.html">Back to Help Index</a></p>
+
+<h2>Overview</h2>
+<p>Cassandra tasks execute CQL (Cassandra Query Language) statements against Apache Cassandra databases. They require a Cassandra connection configured with the cluster's contact points and credentials.</p>
+
+<h2>Task Configuration</h2>
+<table>
+<tr><th>Property</th><th>Description</th></tr>
+<tr><td><strong>Connection</strong></td><td>The Cassandra connection to use</td></tr>
+<tr><td><strong>CQL Statement</strong></td><td>The CQL statement to execute</td></tr>
+<tr><td><strong>Keyspace</strong></td><td>The Cassandra keyspace to operate in</td></tr>
+</table>
+
+<h2>Use Cases</h2>
+<ul>
+<li><strong>Data Loading</strong> -- Insert or update data in Cassandra tables</li>
+<li><strong>Data Extraction</strong> -- Query Cassandra for reporting or further processing</li>
+<li><strong>Schema Management</strong> -- Execute DDL statements to manage Cassandra schemas</li>
+<li><strong>Maintenance</strong> -- Run maintenance operations on Cassandra clusters</li>
+</ul>
+
+<h3>Related Topics</h3>
+<ul>
+<li><a href="task_sql.html">SQL Tasks</a></li>
+<li><a href="add_conn.html">Adding Connections</a></li>
+<li><a href="add_job_task.html">Job Tasks Overview</a></li>
+</ul>
+
+<p><a href="index.html">Back to Help Index</a></p>
+</div>
+</body>
+</html>

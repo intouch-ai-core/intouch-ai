@@ -1,0 +1,22 @@
+type: tool
+name: github
+displayName: GitHub
+description: "Read and create GitHub issues, pull requests, releases and repository metadata via the GitHub REST API. Needs an API Key credential holding a personal access token."
+version: 2.0.0
+category: Developer & DevOps
+provider: Blue Isle
+license: MIT
+tags: [developer-devops, devops, git, issues, status]
+credentialBased: true
+source: yaml
+fit:
+  product: GitHub is a cloud platform for hosting Git repositories, collaborating on code, managing issues, and automating software workflows.
+  users: [software developers, DevOps engineers, product teams, open-source maintainers, IT teams]
+  fields: [software, devops, project-management, product, security]
+  generatedBy: openai/gpt-5.5
+  pains:
+    - "Open a GitHub issue automatically when a workflow fails"
+    - "Email me the open issues on my repository every morning"
+    - "List the pull requests waiting on review"
+    - "What was in the last release?"
+  sourceHash: 13baa00431d70b9d

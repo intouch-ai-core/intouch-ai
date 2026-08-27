@@ -1,0 +1,15 @@
+{
+  "name": "clickhouse",
+  "displayName": "ClickHouse",
+  "description": "Run SQL against ClickHouse over its native HTTP interface \u2014 query, export to a delimited file, import from one, and inspect databases and tables. No JDBC driver to install.",
+  "provider": "Blue Isle",
+  "version": "1.0.0",
+  "mainClass": "com.blueisle.intouch.tools.clickhouse.ClickHouseTool",
+  "jars": [
+    "clickhouse-1.0.0.jar"
+  ],
+  "category": "Data",
+  "credentialBased": true,
+  "assistantDescription": "Run SQL against a ClickHouse cluster over its HTTP interface. Operations: execute (run any SQL; a SELECT publishes rows as JSON plus columns/rowCount), export (stream a query result to a delimited file), import (load a delimited file into a table, matching columns by header name), list-databases, list-tables (needs database), describe (needs database + table). Requires a 'clickhouse' credential holding the host in Server, the user in Login, the password in Secret, and optionally a default database and an ssl flag. Use this for analytical/OLAP SQL on ClickHouse rather than runtimeenv or spawn scripts.",
+  "licenseRequired": false
+}

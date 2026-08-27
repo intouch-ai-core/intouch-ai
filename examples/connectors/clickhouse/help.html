@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ClickHouse Tasks - InTouch Help</title>
+<style>
+body { font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 0; color: #333; background: #fff; }
+.header { background: #003366; color: #fff; padding: 15px 25px; }
+.header h1 { margin: 0; font-size: 20px; font-weight: normal; }
+.header .version { font-size: 12px; color: #8cb4d8; }
+.content { padding: 25px; max-width: 900px; }
+h2 { color: #003366; border-bottom: 2px solid #3f7f86; padding-bottom: 8px; font-size: 18px; }
+h3 { color: #3f7f86; font-size: 15px; }
+p, li { font-size: 13px; line-height: 1.6; }
+table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+th { background: #003366; color: #fff; padding: 8px 12px; text-align: left; font-size: 13px; }
+td { padding: 8px 12px; border-bottom: 1px solid #e0e0e0; font-size: 13px; }
+tr:nth-child(even) { background: #f5f6f7; }
+code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-family: Consolas, Monaco, monospace; font-size: 12px; }
+a { color: #2563eb; text-decoration: none; }
+a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="header">
+<h1>ClickHouse Tasks</h1>
+<span class="version">InTouch Personal Edition v8.0.0</span>
+</div>
+<div class="content">
+
+<h2>Overview</h2>
+<p>Runs SQL against a <strong>ClickHouse</strong> cluster over its HTTP interface (port 8123, or 8443
+with TLS). No JDBC driver is involved &mdash; the HTTP interface handles queries, inserts and format
+conversion, which keeps the connector small and avoids driver conflicts.</p>
+
+<h2>Credential</h2>
+<p>Create a <code>clickhouse</code> credential:</p>
+<table>
+<tr><th>Field</th><th>Value</th></tr>
+<tr><td>Server</td><td>ClickHouse host name or address</td></tr>
+<tr><td>Port</td><td>Leave 0 for the default: 8123, or 8443 when SSL is on</td></tr>
+<tr><td>Login</td><td>ClickHouse user (defaults to <code>default</code>)</td></tr>
+<tr><td>Secret</td><td>Password (may be blank on an unsecured dev cluster)</td></tr>
+<tr><td>Database</td><td>Default database for statements that don't name one</td></tr>
+<tr><td>SSL</td><td>Connect over HTTPS &mdash; required by ClickHouse Cloud</td></tr>
+</table>
+<p>The <strong>Test</strong> button runs <code>SELECT version()</code>, so a green result means the
+credentials actually authenticate &mdash; not merely that the port is open.</p>
+
+<h2>Operations</h2>
+
+<h3>execute</h3>
+<p>Runs any SQL. A <code>SELECT</code> publishes <code>rows</code> (a JSON array of objects keyed by
+column name) along with <code>columns</code>, <code>rowCount</code>, <code>rowsPublished</code> and
+<code>truncated</code>. DDL and DML simply run.</p>
+<p>Published rows are capped at <code>maxRows</code>, or 1000 when it isn't set, because outputs are
+held in memory and written to the activity log. <code>rowCount</code> is always the true number of
+rows returned; <code>truncated</code> tells you whether <code>rows</code> is the whole result. Use
+<code>export</code> for large result sets.</p>
+
+<h3>export</h3>
+<p>Streams a query result to a delimited file. ClickHouse performs the formatting and the response is
+written straight to disk, so the result never has to fit in memory and quoting is the server's own
+&mdash; values containing the delimiter, quotes or newlines are escaped correctly.</p>
+
+<h3>import</h3>
+<p>Loads a delimited file into a table. The file is sent as the body of an <code>INSERT</code> and
+parsed by ClickHouse. With a header row, columns are matched to the table <strong>by name</strong>, so
+the file's column order does not have to match the table's. Without a header, values are taken in the
+table's own column order.</p>
+
+<h3>list-databases, list-tables, describe</h3>
+<p>Catalogue browsing. <code>list-tables</code> takes a database; <code>describe</code> takes a
+database and a table and reports each column with its type.</p>
+
+<h2>Delimiters</h2>
+<p><code>comma</code> and <code>tab</code> map to ClickHouse's CSV and TSV formats. <code>pipe</code>
+and <code>other</code> use CustomSeparated with the delimiter applied as a format setting. When
+<code>other</code> is chosen, a custom delimiter is required.</p>
+
+<h2>Extra settings</h2>
+<p>The <code>settings</code> field takes a JSON object of ClickHouse settings applied to the request,
+for example <code>{"max_execution_time":"60"}</code>.</p>
+
+</div>
+</body>
+</html>

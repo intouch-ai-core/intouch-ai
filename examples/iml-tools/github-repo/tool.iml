@@ -1,0 +1,45 @@
+{
+  "name": "github-repo",
+  "version": "1.0.0",
+  "displayName": "GitHub Repository Admin",
+  "description": "Administer GitHub repositories — create, describe, set topics, rename, archive, list and delete. Requires an API Key credential holding a personal access token; the token never appears in the workflow.",
+  "provider": "Blue Isle",
+  "group": "Developer & DevOps",
+  "assistantDescription": "github-repo operation [org owner repo description homepage private topics newName archived autoInit confirm] — use when the user asks to create a repository, change its description, homepage or topics, list an organisation's repositories, archive one, or delete one. Deleting requires the delete_repo token scope AND a confirm value naming the repository. REQUIRES an API Key credential holding a GitHub personal access token.",
+  "credentialBased": true,
+  "credential": {
+    "type": "apikey",
+    "properties": {}
+  },
+  "input": {
+    "operation": { "type": "string", "required": true, "description": "One of: create-repo, get-repo, update-repo, set-topics, list-repos, delete-repo" },
+    "org": { "type": "string", "default": "", "description": "Organisation login, e.g. 'intouch-ai-core'. For create-repo, blank creates the repository under the token owner's personal account instead." },
+    "owner": { "type": "string", "default": "", "description": "Owner of an existing repository. Defaults to `org` when that is set." },
+    "repo": { "type": "string", "default": "", "description": "Repository name." },
+    "description": { "type": "string", "default": "", "description": "One-line description shown on the repository page and in search." },
+    "homepage": { "type": "string", "default": "", "description": "Website URL shown beside the description." },
+    "private": { "type": "string", "default": "", "description": "true or false. create-repo defaults to true — a repository is private unless you say otherwise." },
+    "autoInit": { "type": "string", "default": "false", "description": "true to create the repository with an initial commit, so it has a default branch immediately." },
+    "topics": { "type": "string", "default": "", "description": "Comma-separated topics for set-topics. REPLACES the existing topics — pass the full list." },
+    "newName": { "type": "string", "default": "", "description": "New repository name, for update-repo. Renaming leaves redirects behind." },
+    "archived": { "type": "string", "default": "", "description": "true to archive the repository read-only. Unarchiving through the API is not supported by GitHub." },
+    "defaultBranch": { "type": "string", "default": "", "description": "Name of the branch to make default. It must already exist." },
+    "confirm": { "type": "string", "default": "", "description": "Required by delete-repo only: the exact 'owner/repo' being deleted. Deletion cannot be undone." }
+  },
+  "steps": [
+    {
+      "name": "run",
+      "type": "python",
+      "script": "github_repo.py",
+      "timeout": 60,
+      "onError": "fail"
+    }
+  ],
+  "publish": {
+    "result": "{{run.result}}",
+    "status": "{{run.status}}",
+    "fullName": "{{run.fullName}}",
+    "url": "{{run.url}}"
+  },
+  "maxTime": 70
+}

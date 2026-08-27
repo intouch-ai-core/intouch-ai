@@ -1,0 +1,22 @@
+type: tool
+name: github-insights
+displayName: GitHub Insights
+description: "Who is looking at a GitHub repository — views, unique visitors, clones, referring sites and most-opened paths, plus stars and forks, as a readable report. Needs an API Key credential with push access."
+version: 1.0.0
+category: Developer & DevOps
+provider: Blue Isle
+license: MIT
+tags: [developer-devops, devops, git, github, analytics, traffic, metrics, reporting]
+credentialBased: true
+source: iml
+fit:
+  product: GitHub is a cloud platform for hosting Git repositories, collaborating on code, managing issues, and automating software workflows.
+  users: [open-source maintainers, developer-relations teams, product managers, software developers]
+  fields: [software, devops, marketing, analytics]
+  pains:
+    - "Who is actually looking at my repository?"
+    - "Email me the repository traffic every Monday"
+    - "Where is the traffic to our repo coming from?"
+    - "Did the launch post move the numbers?"
+    - "Keep a traffic history longer than the 14 days GitHub retains"
+  generatedBy: hand-written against https://docs.github.com/en/rest/metrics/traffic

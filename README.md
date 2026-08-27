@@ -65,7 +65,7 @@ Start and stop with `python3 bin/start.py` and `python3 bin/stop.py`.
 | **Alerts on 4 channels** | Email, Slack, Discord, Telegram — outbound (SMS, WhatsApp, Teams and LINE on Department and Enterprise) |
 | **7 schedule types** | Plus file triggers, folder triggers, AI-condition triggers, and ad-hoc OneShot runs |
 | **IML** | Workflows and tools as code — plain JSON, diffable, reviewable, portable between installs |
-| **Custom tools** | Implement `IToolConnector`, drop in a JAR, and your tool is a first-class citizen |
+| **Custom tools** | Implement [`IToolConnector`](tool-api) — 189 lines, MIT — drop in a JAR, and your tool is a first-class citizen. [Six working examples](examples/connectors) |
 | **Runs on a Pi** | Single JAR, embedded database, zero external dependencies. A Raspberry Pi 5 is enough |
 
 ## Already using Claude Code?
@@ -146,10 +146,24 @@ Everything else is at **[blueisle.com](https://blueisle.com)** —
 - **[Issues](https://github.com/intouch-ai-core/intouch-ai/issues)** — bugs and feature requests
 - **[InTouch Hub](https://hub.blueisle.com)** — browse and publish tools
 
-The platform is commercial; the **ecosystem on top of it is open**. Build tools against the
-MIT-licensed `intouch-tool-api`, or author workflows and tools as IML, and install them from
-anywhere a file lives — a private git repo, an internal artifact server, a coworker's share, or
-the Hub. The Hub is a convenience, not a required channel.
+The platform is commercial; the **ecosystem on top of it is open**, and it is in this
+repository:
+
+- **[`tool-api/`](tool-api)** — `IToolConnector`, 189 lines, MIT. The entire plugin ABI
+- **[`examples/connectors/`](examples/connectors)** — six compiled tools that ship in the
+  product: `excel`, `git`, `clickhouse`, `mongodb`, `ldap`, `cassandra`
+- **[`examples/iml-tools/`](examples/iml-tools)** — five declarative tools, the GitHub family
+  InTouch uses on itself
+
+```bash
+git clone https://github.com/intouch-ai-core/intouch-ai
+cd intouch-ai && ./gradlew :examples:connectors:cassandra:jar
+```
+
+Install what you build from anywhere a file lives — a private git repo, an internal artifact
+server, a coworker's share, or the Hub. The Hub is a convenience, not a required channel.
+
+The server itself is commercial and its source is not published.
 
 ## Licence
 

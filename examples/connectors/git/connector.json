@@ -1,0 +1,14 @@
+{
+  "name": "git",
+  "displayName": "Git",
+  "description": "Drive a Git repository from a workflow \u2014 clone, pull, push, commit, checkout, tag, and read status, log and diff.",
+  "provider": "Blue Isle",
+  "version": "1.0.0",
+  "mainClass": "com.blueisle.intouch.tools.git.GitTool",
+  "jars": [
+    "git-1.0.0.jar"
+  ],
+  "category": "Automation",
+  "credentialBased": true,
+  "licenseRequired": false
+}

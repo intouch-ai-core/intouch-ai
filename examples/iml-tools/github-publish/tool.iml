@@ -1,0 +1,42 @@
+{
+  "name": "github-publish",
+  "version": "1.0.0",
+  "displayName": "GitHub Publish",
+  "description": "Publish files to a GitHub repository — create, update, read or delete one file per call through the Contents API. Requires an API Key credential holding a personal access token; the token never appears in the workflow.",
+  "provider": "Blue Isle",
+  "group": "Developer & DevOps",
+  "assistantDescription": "github-publish operation owner repo path [content contentFile message branch sha] — use when the user asks to publish, commit, upload, update or delete a FILE in a GitHub repository (a README, a report, a config file). put-file is create-or-update: it finds the existing file's sha itself. For binaries or anything over 1 MB use github-release instead. REQUIRES an API Key credential holding a GitHub personal access token.",
+  "credentialBased": true,
+  "credential": {
+    "type": "apikey",
+    "properties": {}
+  },
+  "input": {
+    "operation": { "type": "string", "required": true, "description": "One of: put-file, get-file, delete-file, list-dir" },
+    "owner": { "type": "string", "required": true, "description": "Repository owner — the user or organisation login, e.g. 'intouch-ai-core'." },
+    "repo": { "type": "string", "required": true, "description": "Repository name, e.g. 'intouch-ai'." },
+    "path": { "type": "string", "default": "", "description": "Path of the file inside the repository, e.g. 'docs/report.md'. Required for every operation except list-dir, where it names a directory (blank = repository root)." },
+    "content": { "type": "string", "default": "", "description": "File content as text, for put-file. Use contentFile instead for anything binary." },
+    "contentFile": { "type": "string", "default": "", "description": "Path to a file ON THE SERVER whose bytes are published, for put-file. Takes precedence over content. Capped at 1 MB by the Contents API." },
+    "message": { "type": "string", "default": "", "description": "Commit message. Defaults to 'Update <path> via InTouch'." },
+    "branch": { "type": "string", "default": "", "description": "Branch to commit to. Blank uses the repository's default branch." },
+    "sha": { "type": "string", "default": "", "description": "Blob sha of the file being replaced or deleted. Leave blank — the tool looks it up, which is what makes put-file create-or-update." }
+  },
+  "steps": [
+    {
+      "name": "run",
+      "type": "python",
+      "script": "github_publish.py",
+      "timeout": 60,
+      "onError": "fail"
+    }
+  ],
+  "publish": {
+    "result": "{{run.result}}",
+    "status": "{{run.status}}",
+    "sha": "{{run.sha}}",
+    "url": "{{run.url}}",
+    "action": "{{run.action}}"
+  },
+  "maxTime": 70
+}

@@ -1,0 +1,14 @@
+{
+  "name": "mongodb",
+  "displayName": "MongoDB",
+  "description": "Query and maintain MongoDB collections \u2014 find, insert, update, delete, count, aggregate and export.",
+  "provider": "Blue Isle",
+  "version": "1.0.0",
+  "mainClass": "com.blueisle.intouch.tools.mongodb.MongoDbTool",
+  "jars": [
+    "mongodb-1.0.0.jar"
+  ],
+  "category": "Data",
+  "credentialBased": true,
+  "licenseRequired": false
+}

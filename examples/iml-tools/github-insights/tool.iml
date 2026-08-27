@@ -1,0 +1,38 @@
+{
+  "name": "github-insights",
+  "version": "1.0.0",
+  "displayName": "GitHub Insights",
+  "description": "Who is looking at a GitHub repository — views, unique visitors, clones, referring sites and most-opened paths, plus stars and forks, as a readable report. Requires an API Key credential holding a personal access token with push access; the token never appears in the workflow.",
+  "provider": "Blue Isle",
+  "group": "Developer & DevOps",
+  "assistantDescription": "github-insights operation owner repo [per] — use when the user asks who is looking at a repository, how many views, visitors or clones it got, where its traffic comes from, or how many stars it has. operation=summary returns the whole Insights → Traffic page as text ready to email. GitHub keeps only 14 days. REQUIRES an API Key credential holding a GitHub personal access token with push access to the repository.",
+  "credentialBased": true,
+  "credential": {
+    "type": "apikey",
+    "properties": {}
+  },
+  "input": {
+    "operation": { "type": "string", "default": "summary", "description": "One of: summary, views, clones, referrers, paths, rate-limit. summary is the readable report; the others return raw JSON." },
+    "owner": { "type": "string", "default": "", "description": "Repository owner — the user or organisation login, e.g. 'intouch-ai-core'. Not needed for rate-limit." },
+    "repo": { "type": "string", "default": "", "description": "Repository name, e.g. 'intouch-ai'. Not needed for rate-limit." },
+    "per": { "type": "string", "default": "day", "description": "Grouping for views and clones: day (default) or week." }
+  },
+  "steps": [
+    {
+      "name": "run",
+      "type": "python",
+      "script": "github_insights.py",
+      "timeout": 90,
+      "onError": "fail"
+    }
+  ],
+  "publish": {
+    "result": "{{run.result}}",
+    "status": "{{run.status}}",
+    "views": "{{run.views}}",
+    "uniqueViews": "{{run.uniqueViews}}",
+    "clones": "{{run.clones}}",
+    "uniqueCloners": "{{run.uniqueCloners}}"
+  },
+  "maxTime": 100
+}

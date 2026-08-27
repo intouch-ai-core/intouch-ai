@@ -1,0 +1,14 @@
+{
+  "name": "excel",
+  "displayName": "Excel",
+  "description": "Read and write Microsoft Excel workbooks (.xlsx and .xls), list sheets, and convert between Excel and CSV.",
+  "provider": "Blue Isle",
+  "version": "1.0.0",
+  "mainClass": "com.blueisle.intouch.tools.excel.ExcelTool",
+  "jars": [
+    "excel-1.0.0.jar"
+  ],
+  "category": "Data",
+  "credentialBased": false,
+  "licenseRequired": false
+}

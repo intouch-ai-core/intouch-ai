@@ -1,0 +1,22 @@
+type: tool
+name: github-release
+displayName: GitHub Release
+description: "Cut GitHub releases and attach files to them — create, update and delete releases, upload or remove download assets. Needs an API Key credential holding a personal access token."
+version: 1.0.0
+category: Developer & DevOps
+provider: Blue Isle
+license: MIT
+tags: [developer-devops, devops, git, github, release, versioning, artifacts, downloads]
+credentialBased: true
+source: iml
+fit:
+  product: GitHub is a cloud platform for hosting Git repositories, collaborating on code, managing issues, and automating software workflows.
+  users: [software developers, DevOps engineers, release managers, open-source maintainers]
+  fields: [software, devops, release-management]
+  pains:
+    - "Publish a release and attach the installer we just built"
+    - "Cut a tagged version without opening the GitHub website"
+    - "Ship a binary that is too big to commit into the repository"
+    - "List what was attached to the last release"
+    - "Replace a release asset that shipped with the wrong build"
+  generatedBy: hand-written against https://docs.github.com/en/rest/releases

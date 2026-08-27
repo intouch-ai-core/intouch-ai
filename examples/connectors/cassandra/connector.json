@@ -1,0 +1,14 @@
+{
+  "name": "cassandra",
+  "displayName": "Apache Cassandra",
+  "description": "Run CQL against Apache Cassandra over the DataStax v4 driver \u2014 query, export results to a delimited file, bulk import from one, and list keyspaces, tables and column types.",
+  "provider": "Blue Isle",
+  "version": "1.0.0",
+  "mainClass": "com.blueisle.intouch.tools.cassandra.CassandraTool",
+  "jars": [
+    "cassandra-1.0.0.jar"
+  ],
+  "category": "Enterprise",
+  "credentialBased": true,
+  "licenseRequired": false
+}

@@ -1,0 +1,14 @@
+{
+  "name": "ldap",
+  "displayName": "LDAP",
+  "description": "Search, read, modify and count entries in LDAP or Active Directory.",
+  "provider": "Blue Isle",
+  "version": "1.0.0",
+  "mainClass": "com.blueisle.intouch.tools.ldap.LdapTool",
+  "jars": [
+    "ldap-1.0.0.jar"
+  ],
+  "category": "Enterprise",
+  "credentialBased": true,
+  "licenseRequired": false
+}
