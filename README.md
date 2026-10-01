@@ -9,7 +9,7 @@
 **Production-proven. AI-native. Free to start.**
 
 [![License](https://img.shields.io/badge/Personal-Free%20EULA-green.svg)](LICENSE.txt)
-[![Version](https://img.shields.io/badge/version-8.0.7-blue.svg)](https://github.com/intouch-ai-core/intouch-ai)
+[![Version](https://img.shields.io/github/v/release/intouch-ai-core/intouch-ai?label=version&color=blue)](https://github.com/intouch-ai-core/intouch-ai/releases/latest)
 [![Kotlin](https://img.shields.io/badge/Kotlin-JVM%2017-orange.svg)](https://kotlinlang.org/)
 [![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Windows%20%7C%20macOS%20%7C%20ARM-lightgrey.svg)](https://github.com/intouch-ai-core/intouch-ai)
 
